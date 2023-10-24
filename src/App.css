@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Tilt+Neon&display=swap');
+
+
 .App {
   text-align: center;
 }
 
 #navContainer{
-  background-color: rgb(196, 196, 196);
+  background-color: rgb(192, 47, 47);
+}
+
+#brand{
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.linksNav{
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+#btnPrice{
+  background-color: rgba(242, 41, 41, 0.496);
+}
+
+#cardFooter{
+  height: 10%;
+}
+.category{
+  font-family: 'Tilt Neon', sans-serif;
+  color: rgba(103, 103, 103, 0.709);
 }

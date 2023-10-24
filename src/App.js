@@ -5,7 +5,7 @@ import Book from "./components/cardbook";
 function App() {
   return (
     <div className="App">
-      <ShopNavbar addText="ovunque e comunque" />
+      <ShopNavbar />
       <Book />
     </div>
   );
