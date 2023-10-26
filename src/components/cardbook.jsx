@@ -1,12 +1,9 @@
 import {
   Card,
   Row,
-  //   CardImg,
-  CardTitle,
-  Col,
-  Container,
-  CardImg,
   Button,
+  CardTitle,
+  CardImg,
   CardFooter,
 } from "react-bootstrap";
 
@@ -18,27 +15,20 @@ const Book = (props) => {
       <Row className=" p-2 w-75  justify-content-center">
         {fantasy.map((thumb) => {
           return (
-            <Card className="mx-3 my-3 w-25">
-              <CardImg
-                key={thumb.img}
-                src={thumb.img}
-                className="h-75 pt-2"
-              ></CardImg>
-              <CardTitle key={thumb.title}>
+            <Card className="mx-3 my-3 w-25" key={thumb.asin}>
+              <CardImg src={thumb.img} className="h-75 pt-2"></CardImg>
+              <CardTitle>
                 <h4 className="fs-6 pt-4 ">{thumb.title}</h4>
               </CardTitle>
               <CardFooter id="cardFooter" className="d-flex">
-                <button
+                <Button
                   id="btnPrice"
-                  key={thumb.price}
                   className="btn btn-small rounded-pill flex-grow-1"
                 >
                   {thumb.price}€
-                </button>
+                </Button>
               </CardFooter>
-              <p className="category" key={thumb.category}>
-                Category: {thumb.category}
-              </p>
+              <p className="category">Category: {thumb.category}</p>
             </Card>
           );
         })}
